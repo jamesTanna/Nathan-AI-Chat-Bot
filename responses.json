@@ -1,0 +1,56 @@
+[
+    {
+        "message":"Hello, how can I help you?",
+        "keywords":["hello", "hi", "good morning", "good evening", "good afternoon"]
+    },
+    {
+        "message": "I am a bot, but thanks for asking",
+        "keywords": ["how", "are", "you"]
+    },
+    {
+        "message": "Today's date is todayDate .",
+        "keywords": ["today", "today's", "date", "today", "is", "what"],
+        "mandatoryWords": ["today", "date", "today's"],
+        "typeOfMessage": "question"
+    },
+    {
+        "message": "The time now is currentTime .",
+        "keywords": ["what", "is", "the", "time", "now", "current"],
+        "mandatoryWords": ["time", "now"],
+        "typeOfMessage": "question"
+    },
+    {
+        "message": "My name is botName . I am an AI chatbot and your assistant.",
+        "keywords": ["what", "is", "your", "name", "who", "are", "you"],
+        "mandatoryWords": ["you", "name", "are"],
+        "typeOfMessage": "question"
+    },
+    {
+        "message": "Check a trusted source for this information. https://www.google.com",
+        "keywords": ["search", "this"],
+        "typeOfMessage": "question"
+    },
+    {
+        "message": "I am a bot and do not eat anything.",
+        "keywords": ["what", "eat", "do", "like", "to", "did", "you"],
+        "mandatoryWords": ["you", "eat"],
+        "typeOfMessage": "question"
+    },
+    {
+        "message": "jokeData",
+        "keywords": ["tell", "me", "a", "joke"],
+        "mandatoryWords": ["joke"],
+        "typeOfMessage": "fun"
+    },
+    {
+        "message": "The month now is monthName",
+        "keywords": ["which", "month", "is", "it", "now"],
+        "mandatoryWords": ["month", "now", "which"],
+        "typeOfMessage": "question"
+    },
+    {
+        "message": "Today is weekDay",
+        "keywords": ["what", "day", "of", "week", "today"],
+        "mandatoryWords": ["day", "today", "week"]
+    }
+]

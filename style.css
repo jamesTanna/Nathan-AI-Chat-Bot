@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#header{
+    padding: 5px 10px;
+    background: goldenrod;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    margin: 0px 0px 10px 0px;
+}
+
+h1{
+    color: white;
+    font-family: cursive;
+}
+
+#chat-space{
+    display: block;
+    padding: 60px 15px 70px 15px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.chat{
+    border: 1px solid black;
+    border-radius: 5px;
+    min-width: 50px;
+    min-height: 20px;
+    color: white;
+    padding: 7px 10px;
+    text-align: center;
+    margin: 10px;
+    max-width: 35vw;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 10px 10px 5px gray;
+
+
+}
+
+.user {
+    background: steelblue;
+    align-self: flex-start;
+}
+
+.bot{
+    background: indianred;
+    align-self: flex-end;
+}
+
+#user-input-form{
+    padding: 10px;
+    background: goldenrod;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    height: 60px;
+    border-top: 2px solid white;
+    margin: 10px 0px 0 0;
+}
+
+#user-input{
+    width: 275px;
+    border-radius: 5px;
+    border: none;
+    padding: 0px 5px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#submit{
+    width: 75px;
+    border: none;
+    border-radius: 5px;
+    background: black;
+    color: white;
+    font-family: cursive;
+}
