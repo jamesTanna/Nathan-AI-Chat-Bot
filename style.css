@@ -1,0 +1,49 @@
+:root{
+    --border-color:red;
+}
+header{
+    background: #ccc;
+    color: #fff;
+    margin: 0;
+    padding: 10px;
+}
+h1{
+    margin: 0;
+}
+form{
+    background: #666;
+    color: white;
+    width: auto;
+}
+div{
+    margin: 10px;
+}
+#submit{
+    margin: 10px;
+}
+label{
+    display: block;
+}
+.para{
+    margin: 10px;
+    border: 1px solid var(--border-color);
+    padding: 5px;
+    color: black;
+}
+#box{
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    background: #cfc;
+}
+
+.test{
+    border: 1px;
+    background: #cfc;
+    width: 100px;
+    height: 100px;
+    color:white;
+    text-decoration:underline;
+    margin:3px;
+    width:100px;
+}

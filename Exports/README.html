@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+</head>
+
+<body>
+    <h1 id="dom-package-documentation">DOM Package Documentation</h1>
+<h2 id="introduction">Introduction</h2>
+<p>This JavaScript library, named <code>DOM</code>, provides a set of helper functions for common tasks related to Document Object Model (DOM) manipulation. These functions aim to simplify and streamline the process of working with HTML elements.</p>
+<h2 id="functions">Functions</h2>
+<h3 id="selector-functions">Selector Functions</h3>
+<ul>
+<li><code>getElement(selector)</code>: Returns the first DOM element that matches the specified selector.</li>
+<li><code>getElements(selector)</code>: Returns a NodeList of all DOM elements that match the specified selector.</li>
+</ul>
+<h3 id="display-and-style-functions">Display and Style Functions</h3>
+<ul>
+<li><code>hideElement(element)</code>: Sets the display property of the given element to &#39;none&#39;.</li>
+<li><code>hideAllElements(elements)</code>: Hides multiple elements by setting their display property to &#39;none&#39;.</li>
+<li><code>setDisplayStyle(element, property)</code>: Sets the display property of the given element to the specified value.</li>
+<li><code>getStyleProperty(element, property)</code>: Retrieves the computed style property value for the given element.</li>
+<li><code>setStyle(element, property, value)</code>: Sets the inline style property of the given element.</li>
+</ul>
+<h3 id="content-manipulation-functions">Content Manipulation Functions</h3>
+<ul>
+<li><code>setInnerHtml(element, html)</code>: Sets the inner HTML content of the given element.</li>
+<li><code>setInnerText(element, text)</code>: Sets the text content of the given element.</li>
+</ul>
+<h3 id="element-creation-and-manipulation-functions">Element Creation and Manipulation Functions</h3>
+<ul>
+<li><code>addElementToParent(element, innerText, parentElement)</code>: Creates a new element, sets its text content, and appends it to the specified parent element.</li>
+<li><code>addVoidElementToParent(element, parentElement)</code>: Creates a new void element and appends it to the specified parent element.</li>
+<li><code>setAttribute(element, attribute, value)</code>: Sets an attribute with the specified value for the given element.</li>
+</ul>
+<h3 id="event-handling-functions">Event Handling Functions</h3>
+<ul>
+<li><code>attachEventListener(element, event, callback)</code>: Attaches an event listener to the specified element.</li>
+<li><code>click(element, callback)</code>: Attaches a click event listener to the specified element.</li>
+<li><code>dblclick(element, callback)</code>: Attaches a double-click event listener to the specified element.</li>
+<li><code>rightClick(element, callback)</code>: Attaches a context menu (right-click) event listener to the specified element.</li>
+<li><code>mouseDown(element, callback)</code>: Attaches a mouse down event listener to the specified element.</li>
+<li><code>mouseUp(element, callback)</code>: Attaches a mouse up event listener to the specified element.</li>
+<li><code>mouseOut(element, callback)</code>: Attaches a mouse out event listener to the specified element.</li>
+<li><code>mouseMove(element, callback)</code>: Attaches a mouse move event listener to the specified element.</li>
+<li><code>mouseOver(element, callback)</code>: Attaches a mouse over event listener to the specified element.</li>
+<li><code>mouseEnter(element, callback)</code>: Attaches a mouse enter event listener to the specified element.</li>
+<li><code>mouseLeave(element, callback)</code>: Attaches a mouse leave event listener to the specified element.</li>
+<li><code>submit(formElement, callback)</code>: Attaches a form submission event listener to the specified form element.</li>
+<li><code>hover(element, callback)</code>: Attaches mouse enter and mouse out event listeners to the specified element.</li>
+<li><code>keyUp(element, callback)</code>: Attaches a key up event listener to the specified element.</li>
+<li><code>keyDown(element, callback)</code>: Attaches a key down event listener to the specified element.</li>
+<li><code>change(selectElement, callback)</code>: Attaches a change event listener to the specified select element.</li>
+<li><code>resize(element, callback)</code>: Attaches a resize event listener to the specified element.</li>
+<li><code>windowResize(callback)</code>: Attaches a window resize event listener.</li>
+</ul>
+<h3 id="logging-functions">Logging Functions</h3>
+<ul>
+<li><code>logOne(message)</code>: Logs a single message to the console.</li>
+<li><code>logAll(messages)</code>: Logs an array of messages to the console.</li>
+</ul>
+<h3 id="input-functions">Input Functions</h3>
+<ul>
+<li><code>valueOf(inputNameString)</code>: Returns the value of the input element with the specified name.</li>
+</ul>
+<h3 id="miscellaneous-functions">Miscellaneous Functions</h3>
+<ul>
+<li><code>setId(element, value)</code>: Sets the &#39;id&#39; attribute of the given element to the specified value.</li>
+</ul>
+<h3 id="ajax-http-request-functions">Ajax/HTTP Request Functions</h3>
+<ul>
+<li><code>makeFetchRequest(url, method, callback)</code>: Performs a Fetch API request to the specified URL using the given HTTP method and invokes the callback with the response data.</li>
+</ul>
+<h2 id="usage">Usage</h2>
+<p>To use this library in your JavaScript code, import it and call the desired functions. For example:</p>
+<h3 id="es5">ES5</h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">const</span> DOM = <span class="hljs-built_in">require</span>(<span class="hljs-string">'dom-package'</span>);
+
+<span class="hljs-keyword">const</span> myElement = DOM.getElement(<span class="hljs-string">'#myElement'</span>);
+DOM.hideElement(myElement);
+</code></pre>
+<h3 id="es6">ES6</h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">import</span> DOM <span class="hljs-keyword">from</span> <span class="hljs-string">'dom-package'</span>;
+
+<span class="hljs-keyword">const</span> myElement = DOM.getElement(<span class="hljs-string">'#myElement'</span>);
+DOM.hideElement(myElement);
+</code></pre>
+<h4 id="making-fetch-request">Making fetch request</h4>
+<pre><code class="lang-javascript"><span class="hljs-comment">// Example of making a Fetch API request</span>
+DOM.makeFetchRequest(<span class="hljs-string">'https://api.example.com/data'</span>, <span class="hljs-string">'GET'</span>, <span class="hljs-built_in">data</span> =&gt; console.<span class="hljs-keyword">log</span>(<span class="hljs-built_in">data</span>));
+</code></pre>
+<h4 id="form-related-functions">Form related functions</h4>
+<pre><code class="lang-javascript"><span class="hljs-comment">// Example of using the new form-related functions</span>
+<span class="hljs-keyword">const</span> myForm = DOM.getElement(<span class="hljs-string">'#myForm'</span>);
+DOM.submit(myForm, <span class="hljs-keyword">event</span> =&gt; {
+  <span class="hljs-keyword">event</span>.preventDefault();
+  console.log(<span class="hljs-string">'Form submitted!'</span>);
+});
+</code></pre>
+
+</body>
+
+</html>

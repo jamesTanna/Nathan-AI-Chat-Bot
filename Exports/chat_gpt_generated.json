@@ -1,0 +1,24 @@
+{
+  "CSS Classes": {
+    "addClass": "Adds a CSS class to the specified element.",
+    "removeClass": "Removes a CSS class from the specified element.",
+    "toggleClass": "Toggles a CSS class on/off for the specified element."
+  },
+  "Attributes": {
+    "getAttribute": "Retrieves the value of the specified attribute for the given element.",
+    "removeAttribute": "Removes the specified attribute from the given element."
+  },
+  "Traversal": {
+    "getParent": "Returns the parent element of the specified element.",
+    "getNextSibling": "Returns the next sibling element of the specified element.",
+    "getPreviousSibling": "Returns the previous sibling element of the specified element."
+  },
+  "Ajax/HTTP Requests": {
+    "makeFetchRequest": "Performs a Fetch API request to the specified URL using the given HTTP method and invokes the callback with the response data."
+  },
+  "Form-related Actions": {
+    "resetForm": "Resets the specified form.",
+    "disableFormElement": "Disables the specified form element.",
+    "enableFormElement": "Enables the specified form element."
+  }
+}
