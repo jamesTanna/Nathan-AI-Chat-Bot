@@ -17,7 +17,7 @@ class Response {
                 }
             });
         } else {
-            this.keywords.forEach(keyword => userInput.includes(keyword) ? count += 1 : count += 0);
+            this.keywords.forEach(keyword => count += userInput.includes(keyword) && 1);
         }
 
         this.accuracy = count / this.keywords.length * 100;
