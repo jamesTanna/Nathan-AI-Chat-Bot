@@ -7,8 +7,7 @@ async function respondNormally(userInput, exceptions = false) {
 
     if (!exceptions) makeChatBox('user', userInput);
     inputLog.push(userInput);
-
-    makeChatBox('bot', botResponse);
+    makeChatBox('bot', botResponse );
 }
 
 async function respond(userInput) {

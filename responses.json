@@ -52,5 +52,16 @@
         "message": "Today is weekDay",
         "keywords": ["what", "day", "of", "week", "today"],
         "mandatoryWords": ["day", "today", "week"]
+    },
+    {
+        "message": "Goodbye. If you have any more questions, feel free to ask.",
+        "keywords": ["bye", "goodbye", "see you", "later"],
+        "typeOfMessage": "farewell"
+    },
+    {
+        "message": "Good Night! Have sweet dreams.",
+        "keywords": ["good night"],
+        "mandatoryWords": ["good night"],
+        "typeOfMessage": "farewell"
     }
 ]
